@@ -12,7 +12,7 @@ By offloading data transfer to a dedicated DMA engine, it achieves up to 6900 MB
 ## Comparison: Traditional NVMe Driver vs DG NVMeG4-IP Driver on PetaLinux 
 | Feature | Traditional NVMe on PetaLinux | DG NVMeG4-IP with DMA on PetaLinux |
 |--------|---------------------------------------------------------|------------------------------------|
-| **PCIe Interface** | Uses XDMA + PCIe Hard IP | PCIe Soft IP + Transceivers (No PCIe Hard IP needed) |
+| **PCIe Interface** | Uses XDMA + PCIe Hard IP | PCIe Soft IP + AXI-DMA + Transceivers (No PCIe Hard IP needed) |
 | **SSD Support** | NVMe Gen3 SSD | NVMe Gen4 SSD |
 | **Typical Performance** | ~2000 MB/s (≈57% of Gen3 SSD max) | ~7000 MB/s (Near full Gen4 performance) |
 | **CPU Usage** | High — driver handles protocol in software | Very Low — full NVMe protocol offloaded to hardware |
